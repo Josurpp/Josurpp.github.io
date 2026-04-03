@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Xenthorix - Tienda de Tecnología</title>
 </head>
 <body>
-    
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Xenthorix</h1>
+        <p>Tienda virtual de tecnología moderna</p>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#registro">Registro</a></li>
+            <li><a href="#comentarios">Comentarios</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio">
+            <h2>Los mejores productos tecnológicos</h2>
+            <p>Descubre nuestra variedad de equipos al mejor precio.</p>
+        </section>
+
+        <!-- SOBRE NOSOTROS -->
+        <section id="nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>
+                En Xenthorix nos especializamos en la venta de productos tecnológicos modernos ofreciendo soluciones innovadoras para los clientes que buscan mejorar su rendimiento y productividad.
+            </p>
+            <p>
+                Nuestro objetivo es brindar tecnología de calidad con precios accesibles
+                y una experiencia de compra rápida y sencilla.
+            </p>
+        </section>
+
+        <!-- CATÁLOGO -->
+        <section id="catalogo">
+            <h2>Equipos Disponibles</h2>
+
+            <article style="border: 2px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
+                <img src="imagen/laptop.jpg" style="width:100%;">
+                <h3>Laptop Workstation Pro</h3>
+                <p>Ideal para diseño y programación.</p>
+                <p>Precio: <strong>S/2,759.90</strong></p>
+                <button>Comprar</button>
+            </article>
+
+            <article style="border: 2px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
+                <img src="imagen/dron.jpg" style="width:100%;">
+                <h3>Dron de Inspección 4K</h3>
+                <p>Alta precisión para trabajos técnicos.</p>
+                <p>Precio: <strong>S/3,800.00</strong></p>
+                <button>Comprar</button>
+            </article>
+
+            <article style="border: 2px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
+                <img src="imagen/gafas.jpg" style="width:100%;">
+                <h3>Visores VR</h3>
+                <p>Experiencia inmersiva avanzada.</p>
+                <p>Precio: <strong>S/1,749.90</strong></p>
+                <button>Comprar</button>
+            </article>
+           
+            <article style="border: 2px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
+                <img src="imagen/servidor.jpg" style="width:100%;">
+                <h3>Nodo de Almacenamiento Local</h3>
+                <p>Alta disponibilidad para bases de datos temporales.</p>
+                <p>Precio: <strong>S/200.00</strong></p>
+                <button>Comprar</button>
+            </article>
+
+            <article style="border: 2px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
+                <img src="imagen/terminal_de_pago.jpg" style="width: 100%;">
+                <p>Alta disponibilidad para bases de datos temporales.</p>
+                <p>Precio: <strong>S/300.00</strong></p>
+                <button>Comprar</button>
+            </article>
+            
+
+        </section>
+
+        <!-- REGISTRO -->
+        <section id="registro">
+            <h2>Registro de Cliente</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <label>Nombres:</label>
+                    <input type="text" required><br><br>
+
+                    <label>Apellidos:</label>
+                    <input type="text" required><br><br>
+
+                    <label>DNI:</label>
+                    <input type="text" required><br><br>
+
+                    <label>Correo:</label>
+                    <input type="email" required><br><br>
+
+                    <label>Teléfono:</label>
+                    <input type="tel"><br><br>
+
+                    <button type="submit">Registrarse</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- COMENTARIOS -->
+        <section id="comentarios">
+            <h2>Opiniones de Clientes</h2>
+
+            <article style="display:flex; gap:15px;">
+                <img src="imagen/user1.jpg" style="width:60px; border-radius:50%;">
+                <p><strong>Juan Peres:</strong> Excelente producto.</p>
+            </article>
+
+            <article style="display:flex; gap:15px;">
+                <img src="imagen/user1.jpg" style="width:60px; border-radius:50%;">
+                <p><strong>Maria Lopez:</strong> Muy buena atención al cliente.</p>
+            </article>
+            
+                <h3>Deja tu comentario</h3>
+                <form>
+                    <input type="text" placeholder="Nombre"><br><br>
+                    <textarea placeholder="Comentario"></textarea><br><br>
+                    <button>Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Xenthorix - Tecnología moderna</p>
+    </footer>
+
 </body>
 </html>
