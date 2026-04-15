@@ -1,0 +1,381 @@
+/* Estilo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;       /* centra verticalmente logo y texto */
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: white;
+    padding: 20px;
+}
+
+/* Logo a la izquierda */
+header img {
+    width: 60px;
+    height: 60px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    background: #0077b6;
+    margin-right: 20px;
+}
+
+/* Contenedor del texto */
+header .texto-header {
+    text-align: center;
+    flex: 1; /* ocupa todo el espacio restante */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Menú */
+nav {
+    background-color: #023e8a;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #90e0ef;
+}
+
+/* Catálogo en horizontal */
+#catalogo {
+    padding: 40px;
+    text-align: center;
+}
+
+#catalogo h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #0077b6;
+}
+
+/* Contenedor flexible */
+#catalogo {
+    display: flex;
+    flex-wrap: wrap; /* permite que los artículos bajen si no caben */
+    justify-content: center;
+    gap: 20px; /* espacio entre artículos */
+}
+
+/* Tarjetas de producto */
+#catalogo article {
+    background: white;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#catalogo article:hover {
+    transform: scale(1.05);
+}
+
+#catalogo img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+#catalogo button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#catalogo button:hover {
+    background-color: #00b4d8;
+}
+
+
+#catalogo button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#catalogo button:hover {
+    background-color: #00b4d8;
+}
+
+/* Footer */
+footer {
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Links legales */
+.col-12 {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.col-12 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.col-12 li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.col-12 a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.col-12 a:hover {
+    color: #00b4d8;
+}
+
+/* Sección de registro */
+#registro {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0f7fa, #f4f6f9);
+}
+
+#registro h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+/* Formulario */
+#registro form {
+    width: 100%;
+    max-width: 450px;
+}
+
+#registro fieldset {
+    border: none;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#registro legend {
+    font-weight: bold;
+    color: #023e8a;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+/* Etiquetas e inputs */
+#registro label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+#registro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#registro input:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 6px rgba(0,119,182,0.3);
+    outline: none;
+}
+
+/* Botón */
+#registro button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#registro button:hover {
+    background-color: #00b4d8;
+    transform: scale(1.05);
+}
+
+/* INICIO */
+#inicio {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1b303b, #263235);
+    color: white;
+}
+
+#inicio h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    font-size: 1.2em;
+}
+
+/* SOBRE NOSOTROS */
+#nosotros {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#nosotros h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#nosotros p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+    color: #444;
+}
+
+#nosotros img {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #0077b6;
+    border-radius: 50%;
+    padding: 10px;
+    background: white;
+}
+
+/* COMENTARIOS */
+#comentarios {
+    padding: 50px;
+    background-color: #eef6f9;
+}
+
+#comentarios h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Opiniones */
+#comentarios article {
+    background: white;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#comentarios article img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #0077b6;
+}
+
+/* Formulario de comentarios */
+#comentarios h3 {
+    text-align: center;
+    margin-top: 30px;
+    color: #023e8a;
+}
+
+#comentarios form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#comentarios input, 
+#comentarios textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+#comentarios input:focus, 
+#comentarios textarea:focus {
+    border-color: #0077b6;
+    outline: none;
+}
+
+#comentarios button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#comentarios button:hover {
+    background-color: #00b4d8;
+}

@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Xenthorix - Tienda de Tecnología</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <!-- ENCABEZADO -->
     <header>
-        <h1>Xenthorix</h1>
-        <p>Tienda virtual de tecnología moderna</p>
+        <img src="imagen/logo.png" alt="Logo de la empresa" style="width:50px; height: 50px;border: 10px solid #ccc; padding: 10px; border-radius: 20px; text-align: center;">
+        <div class="texto-header">
+            <h1>Xenthorix</h1>
+            <p>Tienda virtual de tecnología moderna</p>
+        </div>
     </header>
 
     <!-- MENÚ -->
     <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Sobre nosotros</a></li>
-            <li><a href="#catalogo">Catálogo</a></li>
-            <li><a href="#registro">Registro</a></li>
-            <li><a href="#comentarios">Comentarios</a></li>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#nosotros">Sobre nosotros</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="#comentarios">Comentarios</a></li> 
         </ul>
     </nav>
 
@@ -41,89 +45,9 @@
                 Nuestro objetivo es brindar tecnología de calidad con precios accesibles
                 y una experiencia de compra rápida y sencilla.
             </p>
-            <img src="imagen/logo.png" alt="Logo de la empresa" style="width:50px; height: 50px;border: 10px solid #ccc; padding: 10px; border-radius: 20px; text-align: center;">
         </section>
 
-        <!-- CATÁLOGO -->
-        <section id="catalogo">
-            <h2>Equipos Disponibles</h2>
-
-            <article style="border: 3px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
-                <img src="imagen/laptop.jpg" style="width:100%;">
-                <h3>Laptop Workstation Pro</h3>
-                <p>Ideal para diseño y programación.</p>
-                <p>Precio: <strong>S/2,759.90</strong></p>
-                <button>Comprar</button>
-            </article>
-            <br>
-
-            <article style="border: 3px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
-                <img src="imagen/dron.jpg" style="width:100%;">
-                <h3>Dron de Inspección 4K</h3>
-                <p>Alta precisión para trabajos técnicos.</p>
-                <p>Precio: <strong>S/3,800.00</strong></p>
-                <button>Comprar</button>
-            </article>
-            <br>
-
-            <article style="border: 3px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
-                <img src="imagen/gafas.jpg" style="width:100%;">
-                <h3>Visores VR</h3>
-                <p>Experiencia inmersiva avanzada.</p>
-                <p>Precio: <strong>S/1,749.90</strong></p>
-                <button>Comprar</button>
-            </article>
-            <br>
-
-            <article style="border: 3px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
-                <img src="imagen/servidor.jpg" style="width:100%;">
-                <h3>Nodo de Almacenamiento Local</h3>
-                <p>Alta disponibilidad para bases de datos temporales.</p>
-                <p>Precio: <strong>S/200.00</strong></p>
-                <button>Comprar</button>
-            </article>
-            <br>
-            
-            <article style="border: 3px solid #ccc; padding: 15px; width: 250px; border-radius: 10px; text-align: center;">
-                <img src="imagen/terminal_de_pago.jpg" style="width: 100%;">
-                <h3>Terminal de Pago</h3>
-                <p>Alta disponibilidad para bases de datos temporales.</p>
-                <p>Precio: <strong>S/300.00</strong></p>
-                <button>Comprar</button>
-            </article>
-            <br>
-            
-
-        </section>
-
-        <!-- REGISTRO -->
-        <section id="registro">
-            <h2>Registro de Cliente</h2>
-
-            <form>
-                <fieldset style="border: 5px solid #ccc; padding: 15px; width: 400px; border-radius: 10px;"> 
-                    <legend>Datos Personales</legend>
-
-                    <label>Nombres:</label>
-                    <input type="text" required><br><br>
-
-                    <label>Apellidos:</label>
-                    <input type="text" required><br><br>
-
-                    <label>DNI:</label>
-                    <input type="text" required><br><br>
-
-                    <label>Correo:</label>
-                    <input type="email" required><br><br>
-
-                    <label>Teléfono:</label>
-                    <input type="tel"><br><br>
-
-                    <button type="submit">Registrarse</button>
-                </fieldset>
-            </form>
-        </section>
-
+        
         <!-- COMENTARIOS -->
         <section id="comentarios">
             <h2>Opiniones de nuestros clientes</h2>
@@ -141,11 +65,6 @@
             <article style="display:flex; gap:15px;">
                 <img src="imagen/user1.jpg" style="width:60px; border-radius:50%;">
                 <p><strong>Carlos García:</strong> La calidad de los productos es excelente.</p>
-            </article>
-
-            <article style="display:flex; gap:15px;">
-                <img src="imagen/user1.jpg" style="width:60px; border-radius:50%;">
-                <p><strong>César Acuña:</strong> Yo no quiero ser presidente.</p>
             </article>
             
                 <h3>Déjanos tu comentario</h3>
