@@ -10,8 +10,8 @@ body {
 /* Encabezado */
 header {
     display: flex;
-    align-items: center;       /* centra verticalmente logo y texto */
-    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    align-items: center;
+    background: linear-gradient(135deg, #023e8a, #0077b6, #fb8500);
     color: white;
     padding: 20px;
 }
@@ -45,7 +45,7 @@ header p {
 
 /* Menú */
 nav {
-    background-color: #023e8a;
+    background-color: #0077b6;   /* azul medio, igual al encabezado */
     padding: 10px 0;
 }
 
@@ -63,14 +63,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;              /* texto blanco para contraste */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #90e0ef;
+    color: #ffb703;              /* dorado cálido al pasar el mouse */
 }
+
 
 /* Catálogo en horizontal */
 #catalogo {
@@ -187,32 +188,42 @@ footer {
     padding: 50px;
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg, #e0f7fa, #f4f6f9);
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('imagen/registro.png'); /* tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* Título */
 #registro h2 {
     text-align: center;
-    color: #0077b6;
+    color: #ffb703;               /* tono dorado cálido */
     margin-bottom: 20px;
     font-size: 2em;
-}
-/* Formulario */
-#registro form {
-    width: 100%;
-    max-width: 450px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
+#registro form {
+    width: 80%;
+    min-width: 500px;
+    max-width: 900px;
+}
+
+/* Caja del formulario */
 #registro fieldset {
     border: none;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;      /* más espacio interno */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
 }
 
+/* Leyenda */
 #registro legend {
     font-weight: bold;
-    color: #023e8a;
+    color: #fb8500;               /* naranja cálido */
     font-size: 1.3em;
     margin-bottom: 15px;
 }
@@ -235,8 +246,8 @@ footer {
 }
 
 #registro input:focus {
-    border-color: #0077b6;
-    box-shadow: 0 0 6px rgba(0,119,182,0.3);
+    border-color: #fb8500;
+    box-shadow: 0 0 6px rgba(251,133,0,0.4);
     outline: none;
 }
 
@@ -244,8 +255,8 @@ footer {
 #registro button {
     width: 100%;
     padding: 12px;
-    background-color: #0077b6;
-    color: white;
+    background-color: #ffb703;    /* dorado cálido */
+    color: #fff;
     border: none;
     border-radius: 6px;
     font-size: 1em;
@@ -254,17 +265,20 @@ footer {
 }
 
 #registro button:hover {
-    background-color: #00b4d8;
+    background-color: #fb8500;    /* naranja más intenso */
     transform: scale(1.05);
 }
+
+
 
 /* INICIO */
 #inicio {
     padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #1b303b, #263235);
+    background: linear-gradient(135deg, #1b1b2f, #16213e, #ffb703);
     color: white;
 }
+
 
 #inicio h2 {
     font-size: 2.5em;
@@ -379,3 +393,4 @@ footer {
 #comentarios button:hover {
     background-color: #00b4d8;
 }
+
