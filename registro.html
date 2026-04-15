@@ -30,24 +30,25 @@
     <main>
     <section id="registro">
         <form>
-            <fieldset style="border:2px solid #fb8500; padding:30px; width:70%; min-width:500px; max-width:700px; border-radius:15px; background-color:rgba(255,255,255,0.85); box-shadow:0 6px 15px rgba(0,0,0,0.3); margin:0 auto;">
-
+            <fieldset style="border:2px solid #28469b; padding:30px; width:70%; min-width:500px; max-width:700px; border-radius:15px; background-color:rgba(255,255,255,0.85); box-shadow:0 6px 15px rgba(0,0,0,0.3); margin:0 auto;">
                 <legend style="font-weight:bold; color:#00b4d8; font-size:1.3em; margin-bottom:15px;">Datos Personales</legend>
         
                 <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">Nombres:</label>
-                <input type="text" required style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px; transition:border-color 0.3s ease, box-shadow 0.3s ease;">
+                <input type="text" required placeholder="Juan" style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px; transition:border-color 0.3s ease, box-shadow 0.3s ease;">
         
                 <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">Apellidos:</label>
-                <input type="text" required style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
+                <input type="text" required placeholder="Pérez" style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
         
                 <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">DNI:</label>
-                <input type="text" required style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
+                <input type="text" required placeholder="12345678" style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
         
                 <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">Correo:</label>
-                <input type="email" required style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
+                <input type="email" required placeholder="juan@example.com" style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
         
+                <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">Fecha de nacimiento:</label>
+                <input type="date" name="fecha_nacimiento" required style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
                 <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">Teléfono:</label>
-                <input type="tel" style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
+                <input type="tel" placeholder="912345678" style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
         
                 <button type="submit" style="background-color:#00b4d8; color:white; padding:12px 20px; border:none; border-radius:6px; cursor:pointer; font-size:1em; transition:background 0.3s ease, transform 0.2s ease;">Registrarse</button>
             </fieldset>
@@ -58,36 +59,39 @@
 
     <!-- FOOTER -->
     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Ubicación</h4>
+                <p>
+                    <strong>Dirección:</strong> Calle Principal 123<br>
+                    <strong>Ciudad:</strong> Santiago, Chile
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>
+                    <strong>Teléfono:</strong> +56 9 1234 5678<br>
+                    <strong>Email:</strong> info@xenthorix.com
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Horario</h4>
+                <p>
+                    Lunes a viernes<br>
+                    9:00 AM - 6:00 PM
+                </p>
+            </div>
+        </div>
         <p>&copy; 2026 Xenthorix - Tecnología moderna</p>
+        <div class="footer-links">
+            <ul>
+                <li class="links"><a href="/es/legal/copyright.html">Términos y Condiciones</a></li>
+                <li class="links"><a href="/es/legal/privacy.html">Privacidad</a></li>
+                <li class="links"><a href="/es/legal/trademarks.html">Marcas Comerciales</a></li>
+                <li class="links"><a href="/es/legal/transparency.html" target="_blank">Transparencia de la cadena de suministro</a></li>
+                <li class="links"><a href="/es/legal/competition.html">Competencia Justa y Abierta</a></li>
+                <li class="links"><a href="/es/legal/cookies.html">Política sobre “Cookies”</a></li>
+            </ul>
+        </div>
     </footer>
-
-    <div class="col-12 text-center">
-		<ul>
-            <style>
-                .links {
-                    display: inline-block;
-                    margin: 0 10px;
-                }
-                .links a {
-                    text-decoration: none;
-                    color: #333;
-                }
-            </style>
-            
-				<li class="links"><a href="/es/legal/copyright.html">Términos y Condiciones</a></li>
-			
-				<li class="links"><a href="/es/legal/privacy.html">Privacidad</a></li>
-			
-				<li class="links"><a href="/es/legal/trademarks.html">Marcas Comerciales</a></li>
-			
-				<li class="links"><a href="/es/legal/transparency.html" target="_blank">Transparencia de la cadena de suministro</a></li>
-			
-				<li class="links"><a href="/es/legal/competition.html">Competencia Justa y Abierta</a></li>
-			
-				<li class="links"><a href="/es/legal/cookies.html">Política sobre “Cookies”</a></li>
-			
-		</ul>
-	</div>
-
-</body>
 </html>
