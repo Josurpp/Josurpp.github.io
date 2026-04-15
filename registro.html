@@ -9,8 +9,11 @@
 
     <!-- ENCABEZADO -->
     <header>
-        <h1>Xenthorix</h1>
-        <p>Tienda virtual de tecnología moderna</p>
+        <img src="imagen/logo.png" alt="Logo de la empresa" style="width:50px; height: 50px;border: 10px solid #ccc; padding: 10px; border-radius: 20px; text-align: center;">
+        <div class="texto-header">
+            <h1>Xenthorix</h1>
+            <p>Tienda virtual de tecnología moderna</p>
+        </div>
     </header>
 
     <!-- MENÚ -->
@@ -26,30 +29,30 @@
 
     <main>
     <section id="registro">
-        <h2>Registro de Cliente</h2>
-            
-            <form>
-                <fieldset style="border: 2px solid #007bff; padding: 20px; width: 450px; border-radius: 15px; background-color: #f8f9fa; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 0 auto;"> 
-                    <legend style="font-weight: bold; color: #007bff;">Datos Personales</legend>
+        <form>
+            <fieldset style="border:2px solid #fb8500; padding:30px; width:70%; min-width:500px; max-width:700px; border-radius:15px; background-color:rgba(255,255,255,0.85); box-shadow:0 6px 15px rgba(0,0,0,0.3); margin:0 auto;">
 
-                    <label>Nombres:</label>
-                    <input type="text" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"><br><br>
+                <legend style="font-weight:bold; color:#fb8500; font-size:1.3em; margin-bottom:15px;">Datos Personales</legend>
+        
+                <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">Nombres:</label>
+                <input type="text" required style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px; transition:border-color 0.3s ease, box-shadow 0.3s ease;">
+        
+                <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">Apellidos:</label>
+                <input type="text" required style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
+        
+                <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">DNI:</label>
+                <input type="text" required style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
+        
+                <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">Correo:</label>
+                <input type="email" required style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
+        
+                <label style="display:block; margin-bottom:6px; font-weight:bold; color:#333;">Teléfono:</label>
+                <input type="tel" style="width:100%; padding:10px; margin-bottom:18px; border:1px solid #ccc; border-radius:6px;">
+        
+                <button type="submit" style="background-color:#ffb703; color:white; padding:12px 20px; border:none; border-radius:6px; cursor:pointer; font-size:1em; transition:background 0.3s ease, transform 0.2s ease;">Registrarse</button>
+            </fieldset>
+        </form>
 
-                    <label>Apellidos:</label>
-                    <input type="text" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"><br><br>
-
-                    <label>DNI:</label>
-                    <input type="text" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"><br><br>
-
-                    <label>Correo:</label>
-                    <input type="email" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"><br><br>
-
-                    <label>Teléfono:</label>
-                    <input type="tel" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"><br><br>
-
-                    <button type="submit" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Registrarse</button>
-                </fieldset>
-            </form>
         </section>
     </main>
 
